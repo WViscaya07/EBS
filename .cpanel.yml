@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/ebscr/public_html/dev
+    - export DEPLOYPATH=/home2/ebscr/public_html/desarrollo
     - /bin/cp -R * $DEPLOYPATH
