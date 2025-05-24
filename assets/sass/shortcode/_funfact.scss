@@ -1,0 +1,27 @@
+/*------------------------------------------------------
+ 19. Funfact
+--------------------------------------------------------*/
+.cs_funfact_list.cs_style_1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  gap: 28px 0;
+
+  .cs_funfact.cs_style_1 {
+    width: 50%;
+    padding: 0 12px;
+
+    @media (max-width: 420px) {
+      width: 100%;
+    }
+
+    .cs_funfact_number {
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--orange-color);
+      margin-bottom: -4px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+/*--------------------------------------------------------------
+  18. Card
+----------------------------------------------------------------*/
+.cs_card.cs_style_1 {
+  .cs_card_thumbnail {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  .cs_card_content {
+    padding-bottom: 25px;
+  }
+
+  .cs_card_title {
+    margin-bottom: 17px;
+
+    @media (max-width: 1399px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .cs_card_subtitle {
+    margin-bottom: 48px;
+  }
+
+  .cs_progress_wrap {
+    margin-bottom: 16px;
+  }
+
+  .cs_progress_heading {
+    margin-bottom: 15px;
+  }
+
+  .cs_card_info {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 25px 0px;
+    box-shadow: 0px 4px 10px 0px rgba(28, 28, 28, 0.25);
+    border-radius: 0 0 15px 15px;
+
+    @media (max-width: 1399px) {
+      padding: 17px 20px 0px;
+    }
+  }
+
+  .cs_btn.cs_style_1 {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: -25px;
+  }
+}
+
+.cs_card.cs_style_2 {
+  .cs_card_thumbnail {
+    height: 100%;
+    width: 100%;
+    mask-image: url('../img/service_img_masking.svg');
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img {
+      transition: all 0.6s ease-in-out;
+    }
+  }
+
+  .cs_card_info {
+    width: 100%;
+    height: 100%;
+    padding: 35px 43px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    @media (max-width: 991px) {
+      padding: 35px 20px;
+    }
+  }
+
+  .cs_card_title {
+    margin-bottom: 21px;
+
+    @media (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+
+  .cs_card_icon {
+    width: 110px;
+    height: 110px;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px 0 0 0;
+
+    @media (max-width: 1399px) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 991px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 420px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &:hover {
+    .cs_card_thumbnail img {
+      transform: scale(1.1);
+    }
+  }
+}

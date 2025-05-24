@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+  13. Hero
+----------------------------------------------------------------*/
+.cs_hero.cs_style_1 {
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  padding-top: 320px;
+
+  @media (max-width: 1200px) {
+    min-height: 100%;
+    padding: 240px 0 180px;
+  }
+
+  @media (max-width: 991px) {
+    min-height: min-content;
+    padding: 200px 0 160px;
+  }
+
+  @media (max-width: 767px) {
+    max-height: max-content;
+    padding: 200px 0 160px;
+  }
+
+  .cs_hero_content {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1200px) {
+      gap: 60px;
+    }
+
+    @media (max-width: 991px) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+
+  .cs_hero_text {
+    width: 100%;
+    max-width: 880px;
+
+    @media (max-width: 1400px) {
+      max-width: 730px;
+    }
+
+    @media (max-width: 1200px) {
+      max-width: 650px;
+    }
+  }
+
+  .cs_hero_title {
+    margin-bottom: 25px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .cs_hero_subtitle {
+    margin-bottom: 60px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    @media (max-width: 991px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .cs_btn_group {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .cs_player_btn.cs_style_1 {
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cs_hero_shape_1 {
+    top: 20%;
+    left: 8%;
+    transform: translate(-8%, -20%) rotateZ(0deg);
+    animation: moving-hand 5s linear infinite;
+    transition: all 0.4s ease;
+  }
+
+  .cs_hero_shape_2 {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes moving-hand {
+  50% {
+    transform: translate(-8%, -20%) rotateZ(10deg);
+  }
+}

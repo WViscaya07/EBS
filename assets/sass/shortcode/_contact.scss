@@ -1,0 +1,53 @@
+/*------------------------------------------------------------
+ 23. Contact
+--------------------------------------------------------------*/
+.cs_contact_section.cs_style_1 {
+  width: 100%;
+
+  .cs_half_screen_left {
+    width: calc(50vw + 0px);
+
+    @media (max-width:991px) {
+      width: 100%;
+    }
+  }
+
+  .cs_contact_left_img {
+    height: 100%;
+    min-height: 892px;
+
+    @media (max-width:991px) {
+      min-height: 600px;
+    }
+
+    @media (max-width:575px) {
+      min-height: 450px;
+    }
+  }
+
+  .cs_contact_right {
+    padding-left: 86px;
+
+    @media (max-width:1199px) {
+      padding-left: 0;
+    }
+  }
+}
+
+.cs_form_field {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  outline: none;
+  padding: 10px 20px;
+  resize: none;
+  margin-bottom: 0;
+  color: var(--body-color);
+}
+
+.cs_contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
