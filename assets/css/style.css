@@ -4643,13 +4643,13 @@ label {
           animation-play-state: paused;
 }
 .cs_horizontal_slider_wrapper.cs_style_1 .cs_gallery_list {
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 }
 .cs_horizontal_slider_wrapper.cs_style_2 .cs_gallery_list {
   animation-direction: reverse;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 
 .cs_horizontal_in {
