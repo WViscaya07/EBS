@@ -4643,13 +4643,13 @@ label {
           animation-play-state: paused;
 }
 .cs_horizontal_slider_wrapper.cs_style_1 .cs_gallery_list {
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
 }
 .cs_horizontal_slider_wrapper.cs_style_2 .cs_gallery_list {
   animation-direction: reverse;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
 }
 
 .cs_horizontal_in {
@@ -4671,8 +4671,8 @@ label {
           align-items: center;
   gap: 24px;
   margin: 0 12px;
-  -webkit-animation: slide-left 10s linear infinite;
-          animation: slide-left 10s linear infinite;
+  -webkit-animation: slide-left 22s linear infinite;
+          animation: slide-left 22s linear infinite;
 }
 
 .cs_gallery_item {
