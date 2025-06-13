@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/custom-colors.css">
+  <!-- cdn de iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -135,7 +137,7 @@
         <div class="col-lg-6">
           <div class="cs_about_thumbnail_wrapper">
             <div class="cs_about_thumbnail_1 cs_radius_5">
-              <img src="assets/img/IMPULSACION/impulsacion2.jpeg" alt="Image">
+              <img src="assets/img/DISPLAYS/displays14.png" alt="Image">
             </div>
             <div class="cs_about_thumbnail_2 wow fadeInLeft">
               <img src="assets/img/IMPULSACION/impulsacion6.jpeg" alt="Image">
@@ -189,7 +191,9 @@
     <div class="container">
       <div class="cs_section_heading cs_style_1 text-center">
         <h3 class="cs_section_subtitle cs_fs_21 cs_semibold cs_orange_color">Nuestros Servicios</h3>
-        <h2 class="cs_section_title cs_fs_67 mb-0 wow flipInX">MIRA COMO HACEMOS LA DIFERENCIA..!!</h2>
+        <h2 class="cs_section_title cs_fs_67 mb-0 wow flipInX">
+          ¡Conoce un poco más de nosotros!
+        </h2>
       </div>
       <div class="cs_height_82 cs_height_lg_60"></div>
     </div>
@@ -201,89 +205,161 @@
           <div class="cs_slider_wrapper">
             <!-- Slide 1 -->
             <div class="cs_slide">
-              <div class="cs_card cs_style_2 position-relative">
-                <div class="cs_card_thumbnail cs_bg_filed cs_radius_15" data-src="assets/img/service_img_1.jpg">
-                  <img src="assets/img/service_img_1.jpg" alt="Service Image">
+              <div class="cs_card cs_style_2 position-relative service-card" data-bs-toggle="modal"
+                data-bs-target="#serviceCarouselModal" data-service-name="Displays Personalizados" data-images='[
+                  "assets/img/DISPLAYS/displays1.jpeg",
+                  "assets/img/DISPLAYS/displays2.jpeg",
+                  "assets/img/DISPLAYS/displays3.jpeg"
+                ]'>
+                <!-- Imagen de portada -->
+                <div class="cs_card_thumbnail cs_radius_15">
+                  <img src="assets/img/DISPLAYS/displays5.jpeg" alt="Displays Personalizados">
                 </div>
-                <div class="cs_card_info position-absolute">
-                  <h3 class="cs_card_title cs_fs_37 cs_semibold cs_white_color">
-                    Título del servicio pendiente
-                  </h3>
-                  <p class="cs_card_subtitle cs_white_color mb-0">
-                    Descripción pendiente de actualización.
+
+                <!-- Cuerpo con título + icono alineados -->
+                <div class="cs_card_body text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <h3 class="cs_card_title mb-0 me-2">Displays</h3>
+                    <i class="bi bi-camera-fill fs-4 cs_orange_color"></i>
+                  </div>
+                  <p class="cs_card_subtitle mb-0">
+                    Exhibidores a medida que combinan estilo y funcionalidad para potenciar la experiencia de compra y
+                    reforzar tu branding.
                   </p>
-                </div>
-                <div class="cs_card_icon cs_center position-absolute">
-                  <img src="assets/img/icons/graduation-cap.svg" alt="Icono de servicio">
                 </div>
               </div>
             </div>
-            <!-- Slide 2 -->
+
+            <!-- slide 2 -->
             <div class="cs_slide">
-              <div class="cs_card cs_style_2 position-relative">
-                <div class="cs_card_thumbnail cs_bg_filed cs_radius_15" data-src="assets/img/service_img_2.jpg">
-                  <img src="assets/img/service_img_2.jpg" alt="Service Image">
+              <div class="cs_card cs_style_2 position-relative service-card" data-bs-toggle="modal"
+                data-bs-target="#serviceCarouselModal" data-service-name="Graficas" data-images='[
+                  "assets/img/GRAFICAS/antes.png",
+                  "assets/img/GRAFICAS/despues.png",
+                  "assets/img/GRAFICAS/grafica3.jpeg"
+                ]'>
+                <!-- Imagen de portada -->
+                <div class="cs_card_thumbnail cs_radius_15">
+                  <img src="assets/img/GRAFICAS/despues.png" alt="Graficas">
                 </div>
-                <div class="cs_card_info position-absolute">
-                  <h3 class="cs_card_title cs_fs_37 cs_semibold cs_white_color">
-                    Título del servicio pendiente
-                  </h3>
-                  <p class="cs_card_subtitle cs_white_color mb-0">
-                    Descripción pendiente de actualización.
+
+                <!-- Cuerpo con título + icono alineados -->
+                <div class="cs_card_body text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <h3 class="cs_card_title mb-0 me-2">Graficas</h3>
+                    <i class="bi bi-camera-fill fs-4 cs_orange_color"></i>
+                  </div>
+                  <p class="cs_card_subtitle mb-0">
+                    Transformamos tus letreros desgastados en piezas de alto impacto visual: reemplazamos lona antigua
+                    por vinilos e impresiones de alta resolución.
                   </p>
-                </div>
-                <div class="cs_card_icon cs_center position-absolute">
-                  <img src="assets/img/icons/doctor.svg" alt="Icono de servicio">
                 </div>
               </div>
             </div>
-            <!-- Slide 3 -->
+
+            <!-- slide 3 -->
             <div class="cs_slide">
-              <div class="cs_card cs_style_2 position-relative">
-                <div class="cs_card_thumbnail cs_bg_filed cs_radius_15" data-src="assets/img/service_img_3.jpg">
-                  <img src="assets/img/service_img_3.jpg" alt="Service Image">
+              <div class="cs_card cs_style_2 position-relative service-card" data-bs-toggle="modal"
+                data-bs-target="#serviceCarouselModal" data-service-name="Impulsación" data-images='[
+                  "assets/img/IMPULSACION/impulsacion1.jpeg",
+                  "assets/img/IMPULSACION/impulsacion2.jpeg",
+                  "assets/img/IMPULSACION/impulsacion5.jpeg"
+                ]'>
+                <!-- Imagen de portada -->
+                <div class="cs_card_thumbnail cs_radius_15">
+                  <img src="assets/img/IMPULSACION/impulsacion21.jpeg" alt="Impulsación">
                 </div>
-                <div class="cs_card_info position-absolute">
-                  <h3 class="cs_card_title cs_fs_37 cs_semibold cs_white_color">
-                    Título del servicio pendiente
-                  </h3>
-                  <p class="cs_card_subtitle cs_white_color mb-0">
-                    Descripción pendiente de actualización.
+
+                <!-- Cuerpo con título + icono alineados -->
+                <div class="cs_card_body text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <h3 class="cs_card_title mb-0 me-2">Impulsación</h3>
+                    <i class="bi bi-camera-fill fs-4 cs_orange_color"></i>
+                  </div>
+                  <p class="cs_card_subtitle mb-0">
+                    Diseñamos e implementamos acciones promocionales integrales, stands interactivos, degustaciones,
+                    street marketing y materiales personalizados.
                   </p>
-                </div>
-                <div class="cs_card_icon cs_center position-absolute">
-                  <img src="assets/img/icons/home-heart.svg" alt="Icono de servicio">
                 </div>
               </div>
             </div>
-            <!-- Slide 4 -->
+
+            <!-- slide 4 -->
             <div class="cs_slide">
-              <div class="cs_card cs_style_2 position-relative">
-                <div class="cs_card_thumbnail cs_bg_filed cs_radius_15" data-src="assets/img/service_img_4.jpg">
-                  <img src="assets/img/service_img_4.jpg" alt="Service Image">
+              <div class="cs_card cs_style_2 position-relative service-card" data-bs-toggle="modal"
+                data-bs-target="#serviceCarouselModal" data-service-name="Rotulación" data-images='[
+                  "assets/img/ROTULACION/rotulacion1.png",
+                  "assets/img/ROTULACION/rotulacion2.png",
+                  "assets/img/ROTULACION/rotulacion3.png"
+                ]'>
+                <!-- Imagen de portada -->
+                <div class="cs_card_thumbnail cs_radius_15">
+                  <img src="assets/img/ROTULACION/rotulacion1.png" alt="Rotulación">
                 </div>
-                <div class="cs_card_info position-absolute">
-                  <h3 class="cs_card_title cs_fs_37 cs_semibold cs_white_color">
-                    Título del servicio pendiente
-                  </h3>
-                  <p class="cs_card_subtitle cs_white_color mb-0">
-                    Descripción pendiente de actualización.
+
+                <!-- Cuerpo con título + icono alineados -->
+                <div class="cs_card_body text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <h3 class="cs_card_title mb-0 me-2">Rotulación</h3>
+                    <i class="bi bi-camera-fill fs-4 cs_orange_color"></i>
+                  </div>
+                  <p class="cs_card_subtitle mb-0">
+                    Diseñamos e instalamos rótulos de alta visibilidad para fachadas, interiores y vehículos,
+                    utilizando materiales resistentes a la intemperie
+                    y acabados profesionales que garantizan durabilidad y un impacto visual inmediato.
                   </p>
-                </div>
-                <div class="cs_card_icon cs_center position-absolute">
-                  <img src="assets/img/icons/plant-growth.svg" alt="Icono de servicio">
                 </div>
               </div>
             </div>
           </div>
           <div class="cs_slider_arrows cs_style_1">
-            <!-- flechas... (sin cambios) -->
+            <div class="cs_arrow_wrap cs_arrow_wrap_left cs_center">
+              <div class="cs_left_arrow rounded-circle cs_center slick-arrow">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.9219 38.2257L29.6798 51.9836L31.7419 49.9216L18.2786 36.4553L55.4165 36.4553L55.4165 33.5386L18.2728 33.5386L31.7419 20.0724L29.6798 18.0103L15.9219 31.7653C15.0586 32.6286 14.5832 33.7778 14.5832 34.997C14.5832 36.2161 15.0586 37.3653 15.9219 38.2228V38.2257Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+            <div class="cs_arrow_wrap cs_arrow_wrap_right cs_center">
+              <div class="cs_right_arrow rounded-circle cs_center slick-arrow">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.9219 38.2257L29.6798 51.9836L31.7419 49.9216L18.2786 36.4553L55.4165 36.4553L55.4165 33.5386L18.2728 33.5386L31.7419 20.0724L29.6798 18.0103L15.9219 31.7653C15.0586 32.6286 14.5832 33.7778 14.5832 34.997C14.5832 36.2161 15.0586 37.3653 15.9219 38.2228V38.2257Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="cs_height_150 cs_height_lg_80"></div>
   </section>
+
+  <!-- Modal único para todos los servicios -->
+  <div class="modal fade" id="serviceCarouselModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Galería del Servicio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Start Clientes Section -->
   <section class="cs_accent_bg cs_bg_filed" data-src="assets/img/causes_1_bg.jpg" id="clientes">
     <div class="cs_height_150 cs_height_lg_80"></div>
@@ -1054,7 +1130,7 @@
       <div class="row cs_gap_y_40">
         <div class="col-lg-6">
           <div class="cs_half_screen_left">
-            <div class="cs_contact_left_img cs_bg_filed" data-src="assets/img/contacto.jpg"></div>
+            <div class="cs_contact_left_img cs_bg_filed" data-src="assets/img/FONDOS/portada_correo.png"></div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -1199,10 +1275,41 @@
   <!-- Script -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/jquery.slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/odometer.js"></script>
   <script src="assets/js/light-gallery.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#serviceCarouselModal').on('show.bs.modal', function (event) {
+        const trigger = $(event.relatedTarget);               // tarjeta que abrió el modal
+        const serviceName = trigger.data('service-name') || '';   // nombre del servicio
+        const rawImages = trigger.attr('data-images');          // JSON de imágenes
+
+        // 1) Cambiar el título del modal
+        $(this).find('.modal-title')
+          .text(`${serviceName}`);
+
+        // 2) Parsear y poblar el carrusel como antes
+        let images = [];
+        try {
+          images = JSON.parse(rawImages);
+        } catch (err) {
+          console.error('JSON inválido en data-images:', rawImages);
+        }
+
+        const $inner = $(this).find('.carousel-inner').empty();
+        images.forEach((src, idx) => {
+          $inner.append(`
+            <div class="carousel-item ${idx === 0 ? 'active' : ''}">
+              <img src="${src}" class="d-block w-100" alt="Slide ${idx + 1}">
+            </div>
+          `);
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

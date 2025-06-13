@@ -114,3 +114,75 @@ footer .cs_footer_widget_menu a:hover {
         color: #ffffff !important;
     }
 }
+
+/* Override para el fondo degradado en #services */
+#services.cs_gray2_bg {
+  /* gradient de rojo a azul (210°) */
+  background: linear-gradient(210deg, #dd0000 0%, #003f9c 100%) !important;
+}
+
+
+
+
+
+/* carrusel */
+
+/* Asegura que todas las cards tengan la misma altura y se centren */
+.cs_slide {
+  display: flex;
+  justify-content: center;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Miniatura: ocupa la parte superior */
+.service-card .cs_card_thumbnail {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.service-card .cs_card_thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cuerpo con fondo claro para contraste */
+.service-card .cs_card_body {
+  flex: 1 1 auto;
+  padding: 1rem;
+  background: rgba(255,255,255,0.95);
+}
+.service-card .cs_card_title {
+  font-size: 1.25rem;      /* ajusta a tu gusto */
+  color: #1a1a2e;          /* texto oscuro, mejor contraste */
+}
+.service-card .cs_card_subtitle {
+  font-size: 0.95rem;
+  color: #555;             /* gris suave */
+}
+
+/* Icono en esquina inferior derecha */
+.service-card .cs_card_icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.service-card .cs_card_icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* Ajustes responsivos si fuera necesario */
+@media (max-width: 768px) {
+  .service-card .cs_card_body {
+    padding: .75rem;
+  }
+}
