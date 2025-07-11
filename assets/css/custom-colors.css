@@ -294,3 +294,23 @@ section#services {
     justify-content: center !important;
   }
 }
+
+/* ===== TAMAÑO FIJO DE LOGOS EN GALERÍA CLIENTES (#gallery2) ===== */
+#gallery2 .cs_gallery_item {
+  width: 300px !important;
+  height: 300px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: .75rem !important; /* mantén tu radio */
+  margin: 0 .5rem; /* espacio horizontal entre items */
+}
+
+#gallery2 .cs_gallery_item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
